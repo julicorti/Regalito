@@ -1,0 +1,449 @@
+.contenedor {
+    height: 94.2vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../image/img-2.jpeg);
+    object-fit: cover;
+    background-size: cover;
+    backdrop-filter: blur(4px);
+    
+    /*   flex-direction: column; */
+
+  }
+  
+  .contenedor::before {
+    content: "";
+    inset: 0;
+    position: absolute;
+    z-index: -1;
+  
+    backdrop-filter: blur(4px);
+  }
+.contenedor-cora {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+  }
+  .contenedor-cora h1 {
+    font-family: Brush Script MT;
+    font-size: 100px;
+  }
+  .corazon {
+    animation: animate 0.6s linear infinite;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background: #ff4757;
+    transform: rotate(-45deg);
+    box-shadow: -10px -10px 90px #ff4757;
+  }
+  @keyframes animate {
+    0% {
+      transform: rotate(-45deg) scale(1.07);
+    }
+    80% {
+      transform: rotate(-45deg) scale(1.07);
+    }
+    100% {
+      transform: rotate(-45deg) scale(0.8);
+    }
+  }
+  
+  .corazon::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    width: 70px;
+    height: 70px;
+    background-color: #ff4757;
+    border-radius: 50%;
+  }
+  .corazon::after {
+    content: "";
+    position: absolute;
+    right: -50%;
+    width: 70px;
+    height: 70px;
+    background-color: #ff4757;
+    border-radius: 50%;
+  }
+  
+  @media screen and (max-width: 414px) {
+    .contenedor {
+      background-size: cover;
+      height: 93.7vh;
+      width: 100%;
+    }
+    .contenedor-cora h1 {
+      font-size: 55px;
+      color: aliceblue;
+    }
+    .corazon {
+      animation: animate 0.6s linear infinite;
+      position: relative;
+      width: 50px;
+      height: 50px;
+      background: #ff4757;
+      transform: rotate(-45deg);
+      box-shadow: -10px -10px 90px #ff4757;
+    }
+    .corazon::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      width: 50px;
+      height: 50px;
+      background-color: #ff4757;
+      border-radius: 50%;
+    }
+    .corazon::after {
+      content: "";
+      position: absolute;
+      right: -50%;
+      width: 50px;
+      height: 50px;
+      background-color: #ff4757;
+      border-radius: 50%;
+    }
+   
+  
+  }
+  video{
+    margin-top: 30px;
+    width: 200px;
+  }
+  .container-fluid p{
+    position: relative;
+    top: 9px;
+    right: 11px;
+  }
+  .contenedor-fotos{
+    height: 94.2vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../image/family-2.jpeg);
+    object-fit: cover;
+    background-size: cover;
+    backdrop-filter: blur(4px);
+  }
+  .contenedor-fotos::before {
+    content: "";
+    inset: 0;
+    position: absolute;
+    z-index: -1;
+  
+    backdrop-filter: blur(4px);
+  }
+.contenedor-cartas{
+  gap: 15px;
+  display: flex;
+  
+  align-items: center;
+  flex-direction: row;
+  height: 70vh;
+  width: 50vw;
+  background-color: rgba(250, 235, 215, 0.144);
+  box-shadow: 1px 1px 5px gray;
+  justify-content: space-evenly;
+}
+.contenedor-fotos h1{
+  font-size: 80px;
+
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  font-size: 70px;
+  color: rgb(0, 0, 0);
+  font-family: Vegur, 'PT Sans', Verdana, sans-serif;
+}
+.carta{
+ 
+  
+  text-align: center;
+  border-radius: 5px;
+  height: 50vh;
+  width: 15vw;
+  background-color: aliceblue;
+  cursor: default;
+  transition: all 400ms ease;
+  object-fit: contain;
+}
+.carta img{
+  height: 410px;
+  margin-top: 10px;
+  width: 15vw;
+  object-fit: cover;
+}
+.carta a{
+  text-decoration: none;
+  color: black;
+}
+.carta:hover {
+  box-shadow: 5px 5px 20px gray;
+  transform: translateY(-3%);
+}
+@media screen and (max-width: 414px) {
+  .contenedor-fotos{
+    height: 93.7vh;
+  } 
+  .contenedor-cartas {
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+  
+    
+
+  }
+  .contenedor-fotos h1{
+    font-size: 70px;
+    position: relative;
+    top: -35px;
+  }
+  .carta{
+    width: 70vw;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .carta img{
+    margin-top: 10px;
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    
+ 
+  }
+ 
+}
+.contenedor-nosotros{
+  height: 94.2vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  background-image: url(../image/nosotros/nosotros-2.jpeg);
+  object-fit: cover;
+  background-size: cover;
+  backdrop-filter: blur(4px);
+}
+.contenedor-nosotros::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+ 
+  backdrop-filter: blur(4px);
+}
+.contenedor-general{
+  height: 50vh;
+  width: 100%;
+  background-color: rgba(240, 248, 255, 0.253);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+.contenedor-general img{
+  position: relative;
+
+  border-radius: 50%;
+  width: 15vw;
+}
+.contenedor-general h2{
+  color: #FFF;
+  font-size: 90px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+
+.button_slide {
+  color: #FFF;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 0px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #000000;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.slide_down:hover {
+  box-shadow: inset 0 100px 0 0 #000000;
+}
+
+
+
+#outer {
+  width: 364px;
+  margin: 50px auto 0 auto;
+  text-align: center;
+}
+@media screen and (max-width: 414px) {
+  .contenedor-nosotros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contenedor-general{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+
+  }
+.contenedor-general h2{
+ font-size: 80px;
+
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+.contenedor-general img{
+ height: 200px;
+  width: 200px;
+  position: relative;
+align-items: center;
+ 
+}
+}
+.fotos{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url(../image/nosotros/nosotros-4.jpeg);
+  object-fit: cover;
+  background-color: rgba(240, 248, 255, 0.151);
+  background-size: cover;
+  backdrop-filter: blur(10px);
+}
+.fotos::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+
+  backdrop-filter: blur(10px);
+}
+
+.contenedor-nosotros a{
+  text-decoration: none;
+  color: #fff;
+}
+#outer a{
+  
+    text-decoration: none;
+    color: #fff;
+  
+}
+.contenedor-fotitos{
+  background-size: cover;
+  flex-wrap: wrap;
+  display: flex;
+  
+  gap: 15px;
+  height: 100vh;
+  width:100%;
+  
+}
+.fotito {
+  height: 3.3vh;
+  width: 15vw;
+  background-color: #FFF;
+  position: relative;
+  left: 40px;
+ 
+}
+.fotito img{
+  margin-top: 10px;
+  object-fit: cover;
+  width: 15vw;
+  height: 40vh;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.288);
+  
+}
+p{
+  position: relative;
+  left: 10px;
+}
+.contenedor-vos{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url(../image/vos/WhatsApp\ Image\ 2023-10-15\ at\ 01.39.05.jpeg);
+  object-fit: cover;
+  background-color: rgba(240, 248, 255, 0.151);
+  background-size: cover;
+  backdrop-filter: blur(10px);
+}
+.contenedor-vos::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+
+  backdrop-filter: blur(10px);
+}
+@media screen and (max-width: 414px) {
+  .contenedor-vos{
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex-direction: column;
+  }
+ 
+  .contenedor-vos h1{
+    font-size: 40px;
+    text-align: center;
+  }
+  .contenedor-fotitos{
+    background: url(../image/vos/WhatsApp\ Image\ 2023-10-15\ at\ 01.49.05.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    object-fit: contain;
+    background-size: cover;
+    backdrop-filter: blur(4px);
+  }
+  .contenedor-fotitos::before{
+    content: "";
+    inset: 0;
+    position: absolute;
+    z-index: -1;
+  
+    backdrop-filter: blur(4px);
+  }
+  .fotito{
+    margin-top: 50px;
+    width: 40vw;
+    height: 30vh;
+    gap: 20px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.288);
+  }
+  .fotito img{
+  
+    width: 40vw;
+    height:25vh;
+  }
+}
